@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-public class Excersise_1 : MonoBehaviour
+public class Exercise_1 : MonoBehaviour
 {
     private Button buttonNumber; //makes the random number
     public TextMeshProUGUI numberText; //the number which is going to be showed

@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine;
 
 
-public class Excercise_4 : MonoBehaviour
+public class Exercise_4 : MonoBehaviour
 {
     public GameObject sphere;
 
@@ -14,22 +14,16 @@ public class Excercise_4 : MonoBehaviour
 
     private Vector3 sphereSize;//value in which the silder will move
 
-    void Start()
-    {
-        sphereSize = sphere.transform.localScale;
-    }
-
     void Update()
     {
         SliderValue();
-       
     }
     public void SliderValue() //put the value of the slider in the sphere size
     {
         float sizeValue;
 
         sizeValue = sizeSlider.GetComponent<Slider>().value; 
-        sphereSize = new Vector3(sizeValue, sizeValue, sizeValue);
+        sphere.transform.localScale = new Vector3(sizeValue, sizeValue, sizeValue);
     }
 }
    
