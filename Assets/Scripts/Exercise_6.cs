@@ -7,12 +7,12 @@ using UnityEngine.SceneManagement;
 
 public class Exercise_6 : MonoBehaviour
 {
-    public Material[] colorCylinder;
-    public GameObject cylinder;
+    public Material[] colorCylinder; //array of the colors
+    public GameObject cylinder; //cylinder
 
-    public void DropdownSlection(int selection)
+    public void DropdownSlection(int selection) //the dropdown that display the colors 
     {
-        cylinder.GetComponent<Renderer>().material = colorCylinder[selection]; 
+        cylinder.GetComponent<Renderer>().material = colorCylinder[selection]; //change the cylinder color 
     }
 
 }
